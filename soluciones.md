@@ -2,6 +2,18 @@
 
 Soluciones a los ejercicios
 
+## Texto
+
+### Ejercicio 1
+
+    $ wc *.md
+
+### Ejercicio 2
+
+$ cut -d'<' -f1 página.html
+
+### Ejercicio 3
+
 ## Expresiones regulares
 
 ### Ejercicio 1
