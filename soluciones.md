@@ -2,6 +2,69 @@
 
 Soluciones a los ejercicios
 
+## Ficheros
+
+### Ejercicio 1: crea muchos
+
+    $ touch prueba1.txt
+    $ touch prueba2.png
+    $ touch prueba3.fake
+
+    $ file prueba*
+    prueba1.txt:  empty
+    prueba2.png:  empty
+    prueba3.fake: empty
+
+`file` no se deja engañar por el nombre del fichero.
+
+    $ rm prueba*
+
+### Ejercicio 2: directorio no vacío
+
+    $ mkdir ejemplo
+    $ cd ejemplo
+    $ touch prueba1.txt
+    $ touch prueba2.png
+
+    $ cd ..
+    $ rmdir ejemplo
+    rmdir: fallo al borrar «ejemplo/»: El directorio no está vacío
+
+No se puede borrar el directorio: hay que borrar primero el contenido.
+
+    $ rm ejemplo/prueba*
+    $ rmdir ejemplo
+
+¡Ahora sí!
+
+### Ejercicio 3: de vuelta
+
+Comandos del ejercicio:
+
+    $ ls
+    ejemplo.txt  LICENSE  página.html  pic  README.md  soluciones.md
+    $ touch novedad
+    $ cp ejemplo.txt copia.txt
+    $ mv ejemplo.txt pic/movido.txt
+    $ mv *.md pic/
+    $ mv LICE?SE pic/
+    $ rm novedad
+    $ rm noexiste
+    rm: no se puede borrar «noexiste»: No existe el fichero o el directorio
+    $ mkdir nuevodir
+    $ rmdir nuevodir
+    $ df -h
+
+Y de vuelta:
+
+    $ mv pic/LICENSE pic/*.md .
+
+Mueve varios ficheros a la vez.
+
+    $ mv pic/movido.txt ejemplo.txt
+
+Mueve y renombra.
+
 ## Texto
 
 ### Ejercicio 1: cuenta palabras
