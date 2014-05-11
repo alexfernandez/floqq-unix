@@ -203,13 +203,15 @@ O de una tacada:
 
 ## Expresiones regulares
 
-### Ejercicio 1
+### Ejercicio 1: tags HTML
 
 cat page.html | egrep -o "<(\w+).*>[^<>]*</\1>"
 
-### Ejercicio 3: regexp golf
+### Ejercicio 2: 
 
-Soluciones a los primeros seis hoyos del torneo de golf:
+### Ejercicio 3: regex golf
+
+Soluciones a los primeros seis hoyos del [torneo de golf](http://regex.alf.nu/):
 
     foo
     k$
