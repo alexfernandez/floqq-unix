@@ -53,13 +53,18 @@ Comandos del ejercicio:
     rm: no se puede borrar «noexiste»: No existe el fichero o el directorio
     $ mkdir nuevodir
     $ rmdir nuevodir
+    $ ln -s ejemplo.txt pic/defuera.txt
+    $ cd pic
+    $ ln -s ../ejemplo.txt dedentro.txt
     $ df -h
 
 Y de vuelta:
 
+    $ cd ..
+    $ rm pic/dedentro.txt pic/defuera.txt
     $ mv pic/LICENSE pic/*.md .
 
-Mueve varios ficheros a la vez.
+(Mueve varios ficheros a la vez.)
 
     $ mv pic/movido.txt ejemplo.txt
 
