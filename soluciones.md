@@ -57,6 +57,34 @@ En el segundo terminal:
 
 ### Ejercicio 2: cuenta procesos
 
+    $ ps x | wc
+         98     972   25928
+
+... menos uno (la cabecera de `ps`)
+
+### Ejercicio 3: iniciales
+
+    $ wget http://www.cs.duke.edu/~ola/ap/linuxwords
+    --2014-05-11 11:36:36--  http://www.cs.duke.edu/~ola/ap/linuxwords
+    [...]
+    $ cat linuxwords | cut -c1 | sort | uniq -c
+       3086 a
+        491 A
+       2648 b
+        552 B
+       3899 c
+    [...]
+       4532 s
+    [...]
+
+Gana la letra 's' minúscula.
+
+## Opciones
+
+### Ejercicio 1:
+
+### Ejercicio 2: cuenta procesos de usuario
+
     $ ps aux | cut -d' ' -f1 | sort | uniq -c
           2 avahi
          98 chenno
