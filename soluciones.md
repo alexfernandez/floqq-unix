@@ -202,12 +202,19 @@ O de una tacada:
     ssh (1)              - OpenSSH SSH client (remote login program)
 
 ## Expresiones regulares
-
+ 
 ### Ejercicio 1: tags HTML
 
-cat page.html | egrep -o "<(\w+).*>[^<>]*</\1>"
+    egrep "<(\w+).*>[^<>]*</\1>" página.html
 
-### Ejercicio 2: 
+### Ejercicio 2: números
+
+    echo "4" | egrep -o "[0-9](\.[0-9])?"
+    4
+    echo "5.3" | egrep -o "[0-9](\.[0-9])?"
+    5.3
+    echo "89987898.5887999" | egrep -o "[0-9](\.[0-9])?"
+    89987898.5887999
 
 ### Ejercicio 3: regex golf
 
@@ -219,4 +226,6 @@ Soluciones a los primeros seis hoyos del [torneo de golf](http://regex.alf.nu/):
     (\w\w\w)\w*\1
     ^(?!.*(.)(.)\2\1)
     ^(.)(.).*\2\1$
+
+Total: 1180 puntos.
 
