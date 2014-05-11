@@ -184,7 +184,22 @@ Gana la letra 's' minúscula.
 
 Descuenta USER que es la cabecera.
 
-### Ejercicio 3:
+### Ejercicio 3: acceso remoto
+
+    $ apropos remote | grep login
+    rlogin (1)           - OpenSSH SSH client (remote login program)
+    rsh (1)              - OpenSSH SSH client (remote login program)
+    slogin (1)           - OpenSSH SSH client (remote login program)
+    ssh (1)              - OpenSSH SSH client (remote login program)
+    ssh-copy-id (1)      - use locally available keys to authorise logins on a remote machine
+
+O de una tacada:
+
+    $ apropos "remote login"
+    rlogin (1)           - OpenSSH SSH client (remote login program)
+    rsh (1)              - OpenSSH SSH client (remote login program)
+    slogin (1)           - OpenSSH SSH client (remote login program)
+    ssh (1)              - OpenSSH SSH client (remote login program)
 
 ## Expresiones regulares
 
@@ -192,7 +207,7 @@ Descuenta USER que es la cabecera.
 
 cat page.html | egrep -o "<(\w+).*>[^<>]*</\1>"
 
-### Ejercicio 3
+### Ejercicio 3: regexp golf
 
 Soluciones a los primeros seis hoyos del torneo de golf:
 
