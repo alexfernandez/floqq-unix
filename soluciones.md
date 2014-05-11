@@ -1,6 +1,6 @@
 # Curso Unix para Floqq
 
-Soluciones a los ejercicios
+Soluciones a los ejercicios del curso Floqq sobre La Consola Unix.
 
 ## Ficheros
 
@@ -164,24 +164,25 @@ Gana la letra 's' minúscula.
 
 ## Opciones
 
-### Ejercicio 1:
+### Ejercicio 1: movidas
+
+    $ history | grep mv | wc
 
 ### Ejercicio 2: cuenta procesos de usuario
 
     $ ps aux | cut -d' ' -f1 | sort | uniq -c
           2 avahi
-         98 chenno
+         98 usuario
           1 colord
-         13 couchba+
           1 daemon
           1 message+
-          1 mongodb
           1 nobody
-          4 rabbitmq
          79 root
           1 rtkit
           1 statd
           1 USER
+
+Descuenta USER que es la cabecera.
 
 ### Ejercicio 3:
 
