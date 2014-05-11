@@ -41,13 +41,28 @@ En el segundo terminal:
     [...]
     $ kill 11871
 
-### Ejercicio 2: memoria al inicio
+### Ejercicio 2: aviso
+
+    $ sleep 60 && echo "aviso" &
+    [2] 15498
+    [1]   Hecho                   sleep 60
+    $
+
+Tras 60 segundos:
+
+    $ hola
+
+### Ejercicio 3: memoria al inicio
 
     $ free
     ...
     $ free
 
-### Ejercicio 3:
+### Ejercicio 4: asesino en serie
+
+En Linux, matando el proceso X: `/usr/bin/Xorg` mata el servidor gráfico. Matando el Display Manager (en mi máquina, `lightdm`) lleva al login.
+
+En Mac OS X es más difícil matar nada que afecte al sistema.
 
 ## Enlazando comandos
 
