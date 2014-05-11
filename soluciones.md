@@ -229,3 +229,44 @@ Soluciones a los primeros seis hoyos del [torneo de golf](http://regex.alf.nu/):
 
 Total: 1180 puntos.
 
+## Seguridad
+
+### Ejercicio 1: sé root
+
+    $ sudo su
+    #
+
+¡Ahora eres root!
+
+### Ejercicio 2: nuevo dueño
+
+    # mkdir /var/log/pepito
+    # touch /var/log/pepito/pepito.log
+    # chown -R usuario:usuario /var/log/pepito
+
+### Ejercicio 3: nuevo amigo
+
+    # adduser pepito
+    # su pepito
+    $ exit
+
+## Comandos avanzados
+
+### Ejercicio 1: 
+
+### Ejercicio 2: 
+
+### Ejercicio 3: 
+
+## Scripts
+
+### Ejercicio 1:
+
+### Ejercicio 2:
+
+### Ejercicio 3:
+
+## Contacto
+
+Envía tus dudas a alejandrofer@gmail.com.
+
