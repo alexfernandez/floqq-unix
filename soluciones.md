@@ -249,6 +249,7 @@ Total: 1180 puntos.
     # adduser pepito
     # su pepito
     $ exit
+    # deluser pepito
 
 ## Comandos avanzados
 
