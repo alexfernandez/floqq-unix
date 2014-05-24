@@ -253,17 +253,51 @@ Total: 1180 puntos.
 
 ## Comandos avanzados
 
-### Ejercicio 1: 
+Estos ejercicios no tienen realmente solución, pero añado algunos consejos.
 
-### Ejercicio 2: 
+### Ejercicio 1: Copia de seguridad
 
-### Ejercicio 3: 
+Los sistemas Unix modernos auto-montan las unidades externas.
+Localiza el directorio donde se ha montado el disco con `df -h`:
+llamémoslo `<disco>`.
+Luego corre este comando:
+
+    $ rsync -av $HOME /media/usb
+
+### Ejercicio 2: Navega en texto
+
+Links2 permite navegar, seguir enlaces, introducir texto y rellenar formularios.
+
+### Ejercicio 3: En las nubes
+
+Amazon AWS permite crear un certificado y bajarlo, con el nombre del certificado
+(ejemplo: `<certificado>.pem`). La máquina estará accesible por dirección IP.
+Luego sólo hay que hacer:
+
+    $ ssh -i certificado.pem <ip>
+
+Y ya estamos dentro.
+
+## Algunos trucos
+
+Estos ejercicios tampoco tienen solución; de nuevo veremos algunos consejos.
+
+### Ejercicio 1: Entorno de compilación
+
+### Ejercicio 2: Instala aalib
+
+### Ejercicio 3: Compila bb
 
 ## Scripts
 
-### Ejercicio 1:
+### Ejercicio 1: Lista ficheros
 
-### Ejercicio 2:
+La solución está en el script en `scripts/lista-ficheros.sh`.
+
+### Ejercicio 2: Cuenta ficheros
+
+La solución está en el script en `scripts/cuenta-ficheros.sh`.
+Fíjate cómo la función `cuenta` se llama a sí misma.
 
 ### Ejercicio 3:
 
