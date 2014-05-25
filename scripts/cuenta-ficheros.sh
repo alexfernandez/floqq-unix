@@ -10,7 +10,7 @@ function cuenta {
 	echo "In $1"
 	for fichero in $1/*
 	do
-		if [ -d $fichero ]
+		if [ -d "$fichero" ]
 		then
 			cuenta "$fichero"
 		else
