@@ -2,6 +2,53 @@
 
 Soluciones a los ejercicios del curso Floqq sobre La Consola Unix.
 
+## ¡Hola, mundo!
+
+Algunos comentarios sobre los ejercicios.
+
+### Ejercicio 1: eco eco
+
+El comando `echo` no funciona con los siguientes caracteres:
+
+    $ echo hola; mundo
+    $ echo hola & mundo
+    $ echo hola | mundo
+    $ echo hola ( mundo
+    $ echo hola ) mundo
+    $ echo hola < mundo
+
+Y tiene efectos curiosos con estos otros:
+
+    $ echo hola # mundo
+    $ echo hola * mundo
+    $ echo hola > mundo
+
+### Ejercicio 2: instala Homebrew
+
+Si hay problemas revisa el [FAQ](https://github.com/Homebrew/homebrew/wiki/FAQ)
+(preguntas frecuentes).
+
+### Ejercicio 3: instala Cygwin
+
+Igualmente, si hay problemas revisa el [FAQ](https://cygwin.com/faq.html).
+
+## Introducción a Unix
+
+### Ejercicio 1: instala git
+
+Cada Unix tiene su mecanismo de instalación de paquetes.
+El mecanismo universal es la instalación del código fuente,
+que veremos más adelante.
+
+### Ejercicio 2: baja el proyecto
+
+Los ficheros que hemos bajado se usarán en el resto del curso.
+
+### Ejercicio 3: baja el zip
+
+Se puede bajar el fichero desde la URL [http://alexfernandez.github.io/floqq-unix.zip](http://alexfernandez.github.io/floqq-unix.zip),
+y descomprimirlo con las herramientas gráficas.
+
 ## Ficheros
 
 ### Ejercicio 1: crea muchos
