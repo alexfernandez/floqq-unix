@@ -290,16 +290,18 @@ Estos ejercicios tampoco tienen solución; de nuevo veremos algunos consejos.
 
 ## Scripts
 
-### Ejercicio 1: Lista ficheros
+### Ejercicio 1: Crea un montón
+
+La solución está en el script en `scripts/crea-un-monton.sh`.
+
+### Ejercicio 2: Lista ficheros
 
 La solución está en el script en `scripts/lista-ficheros.sh`.
 
-### Ejercicio 2: Cuenta ficheros
+### Ejercicio 3: Cuenta ficheros
 
 La solución está en el script en `scripts/cuenta-ficheros.sh`.
 Fíjate cómo la función `cuenta` se llama a sí misma.
-
-### Ejercicio 3:
 
 ## Contacto
 
