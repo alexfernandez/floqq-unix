@@ -211,11 +211,22 @@ Gana la letra 's' minúscula.
 
 ## Opciones
 
-### Ejercicio 1: movidas
+### Ejercicio 1: último modificado
 
-    $ history | grep mv | wc
+    $ ls -tr | tail -n 1
 
-### Ejercicio 2: cuenta procesos de usuario
+### Ejercicio 2: comprime con Bzip2
+
+    $ tar -cjf pic.tar.bz pic/
+    $ mv pic.tar.bz pic/
+    $ cd pic/
+    $ tar -xjf pic.tar.bz
+
+### Ejercicio 3: sin D ni d
+
+    $ cat ejemplo.txt | grep -vi d
+
+### Ejercicio 4: cuenta procesos de usuario
 
     $ ps aux | cut -d' ' -f1 | sort | uniq -c
           2 avahi
@@ -229,7 +240,25 @@ Gana la letra 's' minúscula.
           1 statd
           1 USER
 
-Descuenta USER que es la cabecera.
+Descuenta USER que es la cabecera (la primera línea de ps).
+
+## Buscando comandos
+
+### Ejercicio 1: movidas
+
+    $ history | grep mv | wc
+
+### Ejercicio 2: cuenta procesos de usuario
+
+Duplicado del capítulo anterior.
+
+### Ejercicio 2b: bonus round
+
+Busca la cadena "-l" en la ayuda de `ls`.
+
+Pista: puede que haya que "escapar" el guión usando "\-l".
+
+La solución, al final del fichero.
 
 ### Ejercicio 3: acceso remoto
 
@@ -331,9 +360,18 @@ Estos ejercicios tampoco tienen solución; de nuevo veremos algunos consejos.
 
 ### Ejercicio 1: Entorno de compilación
 
+Es algo complejo montar el entorno de compilación.
+Busca cualquier error que te aparezca en internet, y sigue las instrucciones.
+Si necesitas ayuda, escríbeme a alejandrofer@gmail.com indicando dónde te has quedado y
+qué te falla.
+
 ### Ejercicio 2: Instala aalib
 
+No tiene mucha historia.
+
 ### Ejercicio 3: Compila bb
+
+De nuevo, busca en internet los errores y contáctame si no puedes resolverlos.
 
 ## Scripts
 
@@ -349,6 +387,12 @@ La solución está en el script en `scripts/lista-ficheros.sh`.
 
 La solución está en el script en `scripts/cuenta-ficheros.sh`.
 Fíjate cómo la función `cuenta` se llama a sí misma.
+
+## Buscando comandos revisited
+
+### Ejercicio 2b: Bonus round
+
+    $ man ls | grep "\-l"
 
 ## Contacto
 
